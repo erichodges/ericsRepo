@@ -39,7 +39,6 @@ An instance of this constructor should have the following properties and methods
 - `age`: has an integer as a value
 - `kind`: has a string as a value--e.g., "horse", "lion", or "pig."
 - `awake`: has a `Boolean` value, and the default is `false`
-- `speak`: has a string as a value (e.g., a pig would return "oink!")
 
 #### methods
 - `growUp()`: adds one year to animal's `age`
