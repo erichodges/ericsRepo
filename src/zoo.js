@@ -7,12 +7,64 @@
 // var Animal = require("./animal");
 
 
-function Zoo() {
+function Zoo(name, location, status, array) {
  // write code here
+ this.name = name;
+ this.location = location;
+ this.status = status;
+ this.animals = array;
+};
+
+
+Zoo.prototype.changeLocation = function() {
+	this.location = location;
+}
+Zoo.prototype.open = function() {
+	return this.status = "open";
+}
+Zoo.prototype.close = function() {
+	return this.status = "closed";
+}
+Zoo.prototype.isOpen = function() {
+	if (this.status === "open") {
+		return true;	
+	}	else {
+		return false;
+	}
+};
+Zoo.prototype.addAnimal = function(animal) {
+	if (this.status === "closed") {
+		return "Zoo is closed";
+	}
+	for (var i = 0; i < array.length; i++) { 
+		if (this.animals[i].kind === animal.name) {
+		return "Already Exists"; 
+	}
+	this.animals.push(animal);
+};
+
+}
+Zoo.prototype.removeAnimal = function() {
+	if (this.status === "closed") {
+		return "Zoo is closed";
+	} else {
+		array.splice();
+	}
 }
 
 
-Zoo.prototype // write more code here
+
+
+// var arr = ["horse", "pig"]
+// arr.splice(1,1)
+
+
+
+
+
+
+
+
 
 
 
